@@ -6,10 +6,22 @@ machine.  Then, in the directory where you cloned this repository, type
 at the command line.  After the compilation, you can open the bin directory and 
 run the created file from there.  
 
-Note: I have successfully tested this application on the Raspberry Pi.  To 
-compile it, I downloaded Open Frameworks for the Rasperry Pi here at:
+Note: With some small adjustments, I have successfully tested this application 
+on the Raspberry Pi.  To compile it, I downloaded OpenFrameworks for the 
+Rasperry Pi here at:
 
 https://github.com/openFrameworks-RaspberryPi/openFrameworks/wiki/Raspberry-Pi-Getting-Started
+
+I then replaced the Makefile with the makefile in the raspberrypi_helloworld 
+example, and, in main.cpp, I replaced:
+
+#include "ofAppGlutWindow.h"
+
+with:
+
+#include "ofAppRaspberryPiWindow.h"
+#include "ofGLES2Renderer.h"
+
 
 Note that I used the Raspbian distribution.
 
