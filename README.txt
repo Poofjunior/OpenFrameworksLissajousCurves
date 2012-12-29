@@ -1,5 +1,9 @@
 Welcome to a test application created with Open Frameworks!
 
+For a visual demonstration, check out this link below:
+http://www.youtube.com/watch?v=6ycbGJ0xjSI
+
+
 To run this application, you first need OpenFrameworks installed on your
 machine.  Then, in the directory where you cloned this repository, type 
      make 
